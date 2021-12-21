@@ -6,7 +6,7 @@
 /*   By: aabdelmo <aabdelmo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/13 14:16:11 by aabdelmo          #+#    #+#             */
-/*   Updated: 2021/12/13 14:30:39 by aabdelmo         ###   ########.fr       */
+/*   Updated: 2021/12/21 11:23:14 by aabdelmo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	ft_putnbr(int n, int *step)
 		*step = *step + 11;
 		return ;
 	}
-	if(n < 0)
+	if (n < 0)
 	{
 		ft_putchar('-', step);
 		n *= -1;
