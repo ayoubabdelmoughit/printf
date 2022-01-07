@@ -6,7 +6,7 @@
 /*   By: aabdelmo <aabdelmo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/21 11:34:08 by aabdelmo          #+#    #+#             */
-/*   Updated: 2021/12/21 11:49:50 by aabdelmo         ###   ########.fr       */
+/*   Updated: 2022/01/05 16:53:08 by aabdelmo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,9 @@ void	ft_cal_printf(va_list arg, int i, int *sp, const char *str)
 	if (str[i] == '%')
 		ft_putchar('%', sp);
 	if (str[i] == 'x')
-		ft_print_hexa(va_arg(arg, unsigned long), "0123456789abcdef", sp);
+		ft_puthexa(va_arg(arg, unsigned long), "0123456789abcdef", sp);
 	if (str[i] == 'X')
-		ft_print_hexa(va_arg(arg, unsigned long), "0123456789ABCDEF", sp);
+		ft_puthexa(va_arg(arg, unsigned long), "0123456789ABCDEF", sp);
 	if (str[i] == 'p')
 	{
 		ft_putstr("0x", sp);

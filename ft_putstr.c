@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aabdelmo <aabdelmo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/13 14:09:02 by aabdelmo          #+#    #+#             */
-/*   Updated: 2021/12/21 11:55:41 by aabdelmo         ###   ########.fr       */
+/*   Created: 2022/01/04 11:04:38 by aabdelmo          #+#    #+#             */
+/*   Updated: 2022/01/05 17:39:00 by aabdelmo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	ft_putstr(char *str, int *step)
 		return ;
 	}
 	i = 0;
-	while (str[i])
+	while (str[i] != '\0')
 	{
 		ft_putchar(str[i], step);
 		i++;

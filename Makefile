@@ -6,7 +6,7 @@
 #    By: aabdelmo <aabdelmo@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/21 11:31:31 by aabdelmo          #+#    #+#              #
-#    Updated: 2021/12/21 11:46:49 by aabdelmo         ###   ########.fr        #
+#    Updated: 2022/01/05 11:51:14 by aabdelmo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,9 +23,10 @@ SRCS = ft_putchar.c\
        ft_putstr.c\
 	   ft_putnbr.c\
 	   ft_putnbr_un.c\
-	   ft_print_hexa.c\
+	   ft_puthexa.c\
 	   ft_printf.c\
 	   ft_print_point.c\
+
 
 OBJS = $(SRCS:.c=.o)
 
@@ -38,9 +39,9 @@ $(NAME): $(OBJS)
 	gcc -Wall -Wextra -Werror -c $< -o ${<:.c=.o}
 
 clean:
-	rm -rf $(OBJS)
+	rm -rf $(OBJS) ./a.out
 
 fclean:
-	rm -rf $(NAME) $(OBJS)
+	rm -rf $(NAME) $(OBJS) ./a.out
 
 re: fclean all
